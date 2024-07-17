@@ -45,6 +45,7 @@ function App() {
         </button>
         <br /><br />
         {converted && <p>Converted Data: {converted}</p>}
+        <hr />
       </div>
     </div>
   );
