@@ -28,7 +28,7 @@ function App() {
   return (
     <div style={styles.container}>
       <div style={styles.innerContainer}>
-        <h1>Convert and Search</h1>
+        <h3>Check Gardu Location</h3>
         <input
           type="text"
           value={input}
@@ -57,6 +57,9 @@ const styles = {
     alignItems: 'center',
     height: '100vh',
     textAlign: 'center',
+    paddingLeft: '400px',
+    paddingRight: '400px',
+    paddingTop: '50px',
   },
   innerContainer: {
     width: '400px',
