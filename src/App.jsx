@@ -75,7 +75,7 @@ const styles = {
     backgroundColor: '#2596be',
     color:'white,'
   },
-  convert: {
+  search: {
     padding: '10px 20px',
     margin: '10px',
     backgroundColor: '#eab676',
