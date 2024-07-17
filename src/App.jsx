@@ -26,7 +26,7 @@ function App() {
   };
 
   return (
-    <div style={{ textAlign: 'center', padding: '500px' }}>
+    <div style={{ textAlign: 'center', paddingLeft: '500px',  paddingRight: '500px', paddingTop : '100px'}}>
       <h2>Search Gardu Location</h2>
       <input
         type="text"
