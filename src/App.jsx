@@ -5,7 +5,7 @@ function App() {
   const [converted, setConverted] = useState('');
 
   const handleConvert = () => {
-    const parts = input.split(' ');
+    const parts = input.trim().split(/\s+/); // Mengatasi spasi ganda
     if (parts.length === 2) {
       const firstPart = parseFloat(parts[0].replace(',', '.'));
       const secondPart = parseFloat(parts[1].replace(',', '.'));
@@ -26,26 +26,50 @@ function App() {
   };
 
   return (
-    <div style={{ textAlign: 'center', paddingLeft: '500px',  paddingRight: '500px', paddingTop : '100px'}}>
-      <h2>Search Gardu Location</h2>
-      <input
-        type="text"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        placeholder="Masukkan data"
-        style={{ width: '300px', padding: '10px' }}
-      />
-      <br /><br />
-      <button onClick={handleConvert} style={{ padding: '10px 20px', marginRight: '10px' }}>
-        Convert
-      </button>
-      <button onClick={handleSearch} style={{ padding: '10px 20px' }}>
-        Search Google
-      </button>
-      <br /><br />
-      {converted && <p>Converted Data: {converted}</p>}
+    <div style={styles.container}>
+      <div style={styles.innerContainer}>
+        <h1>Convert and Search</h1>
+        <input
+          type="text"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          placeholder="Masukkan data"
+          style={styles.input}
+        />
+        <br /><br />
+        <button onClick={handleConvert} style={styles.button}>
+          Convert
+        </button>
+        <button onClick={handleSearch} style={styles.button}>
+          Search Google
+        </button>
+        <br /><br />
+        {converted && <p>Converted Data: {converted}</p>}
+      </div>
     </div>
   );
 }
+
+const styles = {
+  container: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh',
+    textAlign: 'center',
+  },
+  innerContainer: {
+    width: '400px',
+  },
+  input: {
+    width: '100%',
+    padding: '10px',
+    boxSizing: 'border-box',
+  },
+  button: {
+    padding: '10px 20px',
+    margin: '10px',
+  },
+};
 
 export default App;
