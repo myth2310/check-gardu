@@ -37,10 +37,10 @@ function App() {
           style={styles.input}
         />
         <br /><br />
-        <button onClick={handleConvert} style={styles.button}>
+        <button onClick={handleConvert} style={styles.convert}>
           Convert
         </button>
-        <button onClick={handleSearch} style={styles.button}>
+        <button onClick={handleSearch} style={styles.search}>
           Search Google
         </button>
         <br /><br />
@@ -59,7 +59,7 @@ const styles = {
     textAlign: 'center',
     paddingLeft: '500px',
     paddingRight: '400px',
-    paddingTop: '50px',
+    paddingTop: '10px',
   },
   innerContainer: {
     width: '400px',
@@ -69,10 +69,18 @@ const styles = {
     padding: '10px',
     boxSizing: 'border-box',
   },
-  button: {
+  convert: {
     padding: '10px 20px',
     margin: '10px',
+    backgroundColor: '#2596be',
+    color:'white,'
   },
+  convert: {
+    padding: '10px 20px',
+    margin: '10px',
+    backgroundColor: '#eab676',
+    color:'white,'
+  }
 };
 
 export default App;
