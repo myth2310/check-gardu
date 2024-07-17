@@ -55,11 +55,10 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '100vh',
     textAlign: 'center',
     paddingLeft: '500px',
     paddingRight: '400px',
-    paddingTop: '10px',
+    paddingTop: '0px',
   },
   innerContainer: {
     width: '400px',
