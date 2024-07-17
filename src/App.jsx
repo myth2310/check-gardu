@@ -45,7 +45,6 @@ function App() {
         </button>
         <br /><br />
         {converted && <p>Converted Data: {converted}</p>}
-        <hr />
       </div>
     </div>
   );
@@ -73,13 +72,13 @@ const styles = {
     padding: '10px 20px',
     margin: '10px',
     backgroundColor: '#2596be',
-    color:'white,'
+    color:'#ffffff,'
   },
   search: {
     padding: '10px 20px',
     margin: '10px',
     backgroundColor: '#eab676',
-    color:'white,'
+    color:'#ffffff,'
   }
 };
 
