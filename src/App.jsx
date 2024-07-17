@@ -57,7 +57,7 @@ const styles = {
     alignItems: 'center',
     height: '100vh',
     textAlign: 'center',
-    paddingLeft: '400px',
+    paddingLeft: '500px',
     paddingRight: '400px',
     paddingTop: '50px',
   },
@@ -72,6 +72,7 @@ const styles = {
   button: {
     padding: '10px 20px',
     margin: '10px',
+    backgroundColor : 'red',
   },
 };
 
