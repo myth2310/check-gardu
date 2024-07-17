@@ -72,7 +72,6 @@ const styles = {
   button: {
     padding: '10px 20px',
     margin: '10px',
-    backgroundColor : 'red',
   },
 };
 
