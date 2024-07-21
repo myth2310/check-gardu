@@ -28,7 +28,7 @@ function App() {
   return (
     <div style={styles.container}>
       <div style={styles.innerContainer}>
-        <h3>Check Gardu Location</h3>
+        <h2>Check Gardu Location</h3>
         <input
           type="text"
           value={input}
@@ -46,6 +46,7 @@ function App() {
         <br /><br />
         {converted && <p>Converted Data: {converted}</p>}
       </div>
+      <p>Created By ❤ Achmad Miftahudin</p>
     </div>
   );
 }
@@ -58,7 +59,6 @@ const styles = {
     textAlign: 'center',
     paddingLeft: '500px',
     paddingRight: '400px',
-    paddingTop: '0px',
   },
   innerContainer: {
     width: '400px',
